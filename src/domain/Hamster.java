@@ -1,54 +1,47 @@
 package domain;
 
-/**
- *
- * @author Illia_R
- */
-public class Hamster extends Animal{
+public class Cat extends Predator {
+
     private String kind;
 
-    public Hamster(String name, int age, float weight, String kind) {
-        this.name = name;
-        this.age = age;
-        this.weight = weight;
-        this.kind = kind;
+    public Cat(String name, int weight, String kind) {
+        this.name=name;
+        this.weight=weight;
+        this.kind=kind;
     }
-    
-    public Hamster(String name, int age, float weight) {
-        this.name = name;
-        this.age = age;
-        this.weight = weight;
-        this.kind = "just a hamster";
+
+    public Cat() {
+        this("Fluffy",4,"just a cat");
     }
-    
-    public Hamster(String name) {
-        this(name, 1, 1.5f, "just a hamster");
+
+    public Cat(String name) {
+        this(name,4,"just a cat");
     }
-    
-    public Hamster() {
-        this("Hamster", 1, 1.5f, "just a hamster");
-    }     
+
 
     public void play() {
-        System.out.println("Hamster is running in the wheel");
+        System.out.println("Cat is playing...");
     }
-    
-    public void hidingInHouse(){
-        System.out.println("Hamster likes to hide in the corners of house");
+
+    @Override
+    public void hunt() {
+        System.out.println("Cat hunting for a mouse...");
     }
-    
+
     @Override
     public String toString() {
-        return super.toString()+"\nKind:\t"+this.kind+"\n\nThis is hamster!";
+        return super.toString()+"\nKind:\t"+this.kind+"\n\nThis is Cat!";
     }
 
     @Override
     public void speak() {
-        System.out.println("Hamster says: *Silence*");
+        System.out.println("Meow! Meow!");
     }
 
     @Override
     public void eat() {
-        System.out.println("Hamster eats seeds and fresh vegetables");
+        System.out.println("Cat eats meat...");
     }
+
+
 }
