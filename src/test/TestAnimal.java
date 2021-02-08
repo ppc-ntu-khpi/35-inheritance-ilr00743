@@ -1,13 +1,20 @@
 package test;
 
 import domain.Hamster;
-/**
- *
- * @author Illia_R
- */
+
+ /**
+ * The class Test Animal
+ */ 
 public class TestAnimal {
     
-    public static void main(String[] args) {
+/** 
+ *
+ * The method Main
+ *
+ * @param args  the args
+ */
+    public static void main(String[] args) { 
+
         Hamster hamster = new Hamster("Bro", 2, 1.4f);
         System.out.println(hamster);
         hamster.eat();
