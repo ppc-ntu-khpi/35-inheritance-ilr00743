@@ -1,15 +1,26 @@
 package test;
 
-import domain.Cat;
+import domain.Hamster;
 
+ /**
+ * The class Test Animal
+ */ 
 public class TestAnimal {
+    
+/** 
+ *
+ * The method Main
+ *
+ * @param args  the args
+ */
+    public static void main(String[] args) { 
 
-    public static void main(String[] args) {
-        Cat cat = new Cat("Thomas");
-        System.out.println(cat);
-        cat.hunt();
-        cat.eat();
-        cat.speak();
-        cat.play();
+        Hamster hamster = new Hamster("Bro", 2, 1.4f);
+        System.out.println(hamster);
+        hamster.eat();
+        hamster.speak();
+        hamster.play();
+        hamster.hidingInHouse();
+        hamster.sleep();
     }
 }
