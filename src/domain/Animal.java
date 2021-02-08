@@ -52,7 +52,7 @@ public class Animal {
     @Override
 /** 
  *
- * Method that display information about the Animal
+ * Method that display information about the animal
  *
  * @return String
  */
